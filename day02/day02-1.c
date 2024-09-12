@@ -9,7 +9,7 @@ int main(void) {
 	printf("기능 : ");
 	scanf_s("%d", &rlsmd);
 
-	if (rlsmd > 5) {
+	if (rlsmd < 1 || rlsmd > 5) {
 		printf("잘못 입력하셨습니다.\n");
 		exit(0);
 	}
