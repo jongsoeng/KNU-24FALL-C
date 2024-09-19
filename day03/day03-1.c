@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+int prime_number(int k);
+
 int main(void) {
 	int a;
 
