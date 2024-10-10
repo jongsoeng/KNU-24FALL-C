@@ -11,15 +11,15 @@ int main(void) {
 
     srand(time(NULL));
 
-    while (count < 10000000) {
+    while (count < 10000000000) {
         x = (double)rand() / (double)RAND_MAX;
         y = (double)rand() / (double)RAND_MAX;
         if (x*x + y*y <= 1) {
             circle++;
         }
         count ++;
-        if (count % 100000 == 0) {
-            percent = count / 100000;
+        if (count % 100000000 == 0) {
+            percent = count / 100000000;
             double PI = (double)circle / count * 4;
             printf("%d%% 진행.. 원주율 : %lf ", percent, PI);
             int bar = percent / 5;
