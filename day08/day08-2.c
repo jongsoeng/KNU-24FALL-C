@@ -35,8 +35,6 @@ void fileRandom(int array[SIZE][SIZE]) {
 }
 
 void printArray(int array[SIZE][SIZE]) {
-    srand(time(NULL));
-
     for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++)
                 printf("%2d ", array[i][j]);
@@ -57,7 +55,7 @@ void movePointer(void* array) {
             break;
         }
         ptr = ptr + *ptr;
-        if (b > 9) { // b가 9를 넘어가면 a를 증가시키고 b를 조정
+        if (b > SIZE) { // b가 9를 넘어가면 a를 증가시키고 b를 조정
             a += b / SIZE; // a를 넘어진 만큼 증가
             b = b % SIZE;  // b는 SIZE를 넘지 않도록 조정
         }
