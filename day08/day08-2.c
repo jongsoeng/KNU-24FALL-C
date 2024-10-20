@@ -45,7 +45,7 @@ void printArray(int array[SIZE][SIZE]) {
 }
 
 void movePointer(void* array) {
-    int a = 0, b = 0, a1, b1, op;
+    int a = 0, b = 0;
     int *ptr = (int*)array;
 
     printf("현재 위치 : (%d, %d), 배열의 값 : %d\n", a,b, *ptr);
