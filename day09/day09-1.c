@@ -15,8 +15,6 @@ void in(struct v1 V1, struct v2 V2);
 int main(void) {
     struct v1 V1;
     struct v2 V2;
-    int x, y, z;
-    int rst;
     int cmd;
 
     while (1) {

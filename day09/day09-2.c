@@ -9,9 +9,7 @@ struct PtrInfo {
 void printProduct(struct PtrInfo p[5]);
 
 int main(void) {
-    struct PtrInfo *p;
-    int a;
-    
+    struct PtrInfo p[5];
     printProduct(p);
 
     return 0;
@@ -28,9 +26,10 @@ void printProduct(struct PtrInfo p[5]) {
             break;
         }
         printf("상품명 : ");
-        scanf("%s", &p[i].name);
+        scanf("%s", p[i].name);
         printf("가격 : ");
         scanf("%d", &p[i].money);
+        printf("\n");
 
         index++;
     }
