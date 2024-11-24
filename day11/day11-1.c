@@ -5,7 +5,7 @@
 int main(void) {
     int a,b,c;
 
-    printf("실수 a, b, c 입력\n");
+    printf("실수 a, b, c 입력 : ");
     scanf("%d %d %d", &a, &b, &c);
 
     double equ = b * b - 4.0 * a * c;
